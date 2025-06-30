@@ -1,0 +1,35 @@
+# Maven build output directory
+/target/
+
+# Eclipse compiled output directory
+/bin/
+
+# Log files and directories
+*.log
+logs/
+
+# TestNG and ExtentReports output directories
+/test-output/
+/spark/
+
+# Allure-results directory for raw report data
+/allure-results/
+
+# Downloaded images from test runs
+/images/
+
+# Eclipse project-specific settings files
+.classpath
+.project
+.settings/
+
+# Mac operating system files
+.DS_Store
+
+# IDE-specific files (e.g., for IntelliJ)
+.idea/
+*.iml
+*.iws
+
+# Node.js dependency directory
+/node_modules/
