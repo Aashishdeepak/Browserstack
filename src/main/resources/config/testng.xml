@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- This suite is configured to run tests in parallel on BrowserStack -->
+<suite name="BrowserStack_Parallel_Suite" parallel="tests" thread-count="5">
+
+    <test name="Test on Windows 11 - Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="osVersion" value="11"/>
+        <classes>
+            <class name="Runners.BaseRunner"/>
+        </classes>
+    </test>
+    
+    <test name="Test on Windows 11 - Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="osVersion" value="11"/>
+        <classes>
+            <class name="Runners.BaseRunner"/>
+        </classes>
+    </test>
+
+    <test name="Test on Windows 11 - Edge">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="osVersion" value="11"/>
+        <classes>
+            <class name="Runners.BaseRunner"/>
+        </classes>
+    </test>
+    
+    <test name="Test on macOS Sonoma - Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="os" value="OS X"/>
+        <parameter name="osVersion" value="Sonoma"/>
+        <classes>
+            <class name="Runners.BaseRunner"/>
+        </classes>
+    </test>
+    
+    <test name="Test on iOS - iPhone 15 Pro">
+        <parameter name="browser" value="Safari"/>
+        <parameter name="os" value="iOS"/>
+        <parameter name="osVersion" value="17"/>
+        <parameter name="deviceName" value="iPhone 15 Pro"/>
+        <classes>
+            <class name="Runners.BaseRunner"/>
+        </classes>
+    </test>
+
+</suite>
